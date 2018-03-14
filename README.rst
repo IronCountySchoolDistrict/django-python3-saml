@@ -2,9 +2,7 @@
 Django-python3-saml
 ===================
 
-Django-python3-saml is a Django app designed to allow
-plug & play SAML authentication setup for
-any Python 3 enabled Django instance.
+Django-python3-saml is a Django app designed to allow plug & play SAML authentication setup for any Python 3 enabled Django instance.
 
 Setup
 -----------
@@ -70,7 +68,7 @@ Setup
     import sys
     import environ
 
-    # Three folder back (/a/b/c/ - 3 = /)
+    # Three folder back (/config/settings/.env - 3 = /)
     # This should be walked back to the project's root (e.g. where manage.py exists)
     root = environ.Path(__file__) - 3
 
@@ -141,11 +139,25 @@ Setup
 
     url(r'^saml/', include('django-python-3-saml.urls')),
 
-6. Add 'django-python3-saml.backends.SAMLServiceProviderBackend' to AUTHENTICATION_BACKENDS like this::
+6. Once the urls have been included as above the SP url paths should be as the following example::
+
+    https://example.com/saml/initiate-login/
+    https://example.com/saml/complete-login/
+    https://example.com/saml/metadata/
+
+7. Add 'django-python3-saml.backends.SAMLServiceProviderBackend' to AUTHENTICATION_BACKENDS like this::
 
     AUTHENTICATION_BACKENDS = [
         'django-python3-saml.backends.SAMLServiceProviderBackend',
         ...
     ]
 
-7. Install chosen IDP api
+8. Install chosen Identity Provider (IDP) api::
+
+    Example Google api: pip install --upgrade google-api-python-client
+
+Special Thanks
+==============
+
+OneLogin's SAML Python Toolkit --> `<https://github.com/onelogin/python3-saml>`
+Django-environ --> `<https://github.com/joke2k/django-environ>`
