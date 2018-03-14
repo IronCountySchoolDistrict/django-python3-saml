@@ -159,5 +159,5 @@ Setup
 Special Thanks
 ==============
 
-OneLogin's SAML Python Toolkit --> `<https://github.com/onelogin/python3-saml>`
-Django-environ --> `<https://github.com/joke2k/django-environ>`
+1. OneLogin's SAML Python Toolkit --> `<https://github.com/onelogin/python3-saml>`
+2. Django-environ --> `<https://github.com/joke2k/django-environ>`
