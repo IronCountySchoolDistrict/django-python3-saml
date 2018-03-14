@@ -4,6 +4,11 @@ Django-python3-saml
 
 Django-python3-saml is a Django app designed to allow plug & play SAML authentication setup for any Python 3 enabled Django instance.
 
+Warning
+-------
+
+This package is still under testing.
+
 Install
 -------
 
