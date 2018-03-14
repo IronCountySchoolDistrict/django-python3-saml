@@ -1,0 +1,2 @@
+python3-saml
+django-environ
