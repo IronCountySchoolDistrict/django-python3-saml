@@ -23,7 +23,8 @@ Setup
 2. Copy the template below into the .env::
 
     # Fill out all that apply.
-    # On True or False pick the one that applies.
+    # On true or false pick the one that applies.
+    # Django-environ expects lowercase true/false
 
     # Redirect URL passed to the next parameter.
     LOGIN_REDIRECT_URL=""
@@ -32,7 +33,7 @@ Setup
     X509CERT=""
 
     # HTTPS setting
-    HTTPS=True or False
+    HTTPS=true or false
 
     # Service Provider Information
     SP_METADATA_URL=""
@@ -53,8 +54,8 @@ Setup
     NEW_USER_GROUPS=[]
 
     # New Users setup
-    ACTIVE_STATUS=True or False
-    STAFF_STATUS=True or False
+    ACTIVE_STATUS=true or false
+    STAFF_STATUS=true or false
 
     # Contact Information Technical
     CI_TECH_GIVEN_NAME=""
@@ -88,7 +89,7 @@ Setup
     PROJECT_ROOT = root()
 
     # Initialize Env function
-    # Booleans at initialized in the ENV_BOOLs variable
+    # Booleans are initialized in the ENV_BOOLS dict.
     ENV_BOOLS = {
         'HTTPS': (bool,False),
         'ACTIVE_STATUS': (bool,False),
