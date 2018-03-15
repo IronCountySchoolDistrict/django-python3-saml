@@ -133,7 +133,7 @@ Setup
             }
         },
         'ORGANIZATION_INFO': {
-            'EN-US': {
+            'EN_US': {
                 'NAME': env("ORG_NAME"),
                 'DISPLAY_NAME': env("ORG_DISPLAY_NAME"),
                 'URL': env("ORG_HOME_URL"),
