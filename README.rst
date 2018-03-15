@@ -173,4 +173,4 @@ Special Thanks
 
 1. Kristian Oellegaard --> `django-saml-service-provider <https://github.com/KristianOellegaard/django-saml-service-provider>`_
 2. OneLogin's SAML Python Toolkit --> `python3-saml <https://github.com/onelogin/python3-saml>`_
-3. Joke2k --> `django-environ <https://github.com/joke2k/django-environ>`_
+3. Daniele Faraglia --> `django-environ <https://github.com/joke2k/django-environ>`_
