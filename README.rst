@@ -94,6 +94,7 @@ Setup
     env.read_env()
 
     # Set the system path to the base application folder
+    # Below is an example setup.
     sys.path.insert(0, os.path.join(PROJECT_ROOT, 'apps'))
 
     # SAML variable houses all .env variables in a single location.
