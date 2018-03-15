@@ -1,6 +1,3 @@
-import logging
-import logging.config
-
 from django.conf import settings
 from django.contrib.auth import login, authenticate
 from django.core.exceptions import PermissionDenied
@@ -9,8 +6,6 @@ from django.views.generic import View
 from onelogin.saml2.auth import OneLogin_Saml2_Auth
 from onelogin.saml2.utils import OneLogin_Saml2_Utils
 from .utils import SAMLSettingsMixin
-
-logger = logging.getLogger(__name__)
 
 # Create your views here.
 class InitiateAuthenticationView(SAMLSettingsMixin, View):

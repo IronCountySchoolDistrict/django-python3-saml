@@ -1,10 +1,5 @@
-import logging
-import logging.config
-
 from django.conf import settings
 from .saml_settings import SAMLServiceProviderSettings
-
-logger = logging.getLogger(__name__)
 
 # Mixin to load saml_settings.py and pass to the view.
 # Will create .env to populate these fields dynamically
