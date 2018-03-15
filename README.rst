@@ -88,7 +88,14 @@ Setup
     PROJECT_ROOT = root()
 
     # Initialize Env function
-    env = environ.Env()
+    # Booleans at initialized in the ENV_BOOLs variable
+    ENV_BOOLS = {
+        'HTTPS': (bool,False),
+        'ACTIVE_STATUS': (bool,False),
+        'STAFF_STATUS': (bool,False),
+        'DEBUG': (bool,False),
+    }
+    env = environ.Env(**ENV_BOOLS)
 
     # Reads the .env file
     env.read_env()
