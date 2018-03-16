@@ -153,7 +153,7 @@ Setup
 
     INSTALLED_APPS = [
         ...
-        'django-python3-saml',
+        'django_python3_saml',
     ]
 
 5. Include the dango-python3-saml URLconf into project urls.py like this::
@@ -162,9 +162,9 @@ Setup
 
 6. Once the urls have been included as above the SP url paths should be as the following example::
 
-    https://example.com/saml/initiate-login/
-    https://example.com/saml/complete-login/
-    https://example.com/saml/metadata/
+    Start Url --> https://example.com/saml/initiate-login/
+    ACS URL --> https://example.com/saml/complete-login/
+    Enitiy ID --> https://example.com/saml/metadata/
 
 7. Add 'django-python3-saml.backends.SAMLServiceProviderBackend' to AUTHENTICATION_BACKENDS like this::
 
@@ -176,6 +176,11 @@ Setup
 8. Install chosen Identity Provider (IDP) api::
 
     Example Google api: pip install --upgrade google-api-python-client
+
+    Attribute Mapping expected format for new users:
+    first_name - Basic Information - First Name
+    last_name - Basic Information - Last Name
+    email - Basic Information -  Primary Email
 
 Special Thanks
 ==============
