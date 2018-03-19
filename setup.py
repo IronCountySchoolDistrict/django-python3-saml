@@ -21,7 +21,7 @@ setup(
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
-        'Framework :: Django :: 1.11.7',  # replace "X.Y" as appropriate
+        'Framework :: Django :: 1.11',  # replace "X.Y" as appropriate
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',  # example license
         'Operating System :: OS Independent',
