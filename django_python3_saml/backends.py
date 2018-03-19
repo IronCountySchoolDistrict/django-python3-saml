@@ -1,5 +1,6 @@
 from django.conf import settings
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User, Group
+from django.core.exceptions import ObjectDoesNotExist
 
 class SAMLServiceProviderBackend(object):
 
@@ -21,7 +22,11 @@ class SAMLServiceProviderBackend(object):
                 user.save()
                 if groups:
                     for item in groups:
-                        user.groups.add(item)
+                        try:
+                            group = Group.objects.get(name=item)
+                            user.groups.add(group)
+                        except Group.DoesNotExist:
+                            return None
             return user
         return None
 
