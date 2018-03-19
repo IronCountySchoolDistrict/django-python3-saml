@@ -47,7 +47,7 @@ Setup
     # Upon new Django account creation.
 
     # Environ expects a comma separated string.
-    # E.G. "Now, Is, The, Time"
+    # E.G. "Now,Is,The,Time"
 
     # If no groups to be assigned leave list blank.
     NEW_USER_GROUPS=""
@@ -177,11 +177,9 @@ Setup
         ...
     ]
 
-8. Install chosen Identity Provider (IDP) api::
+8. Setup chosen Identity Provider (IDP) and Attribute Mapping::
 
-    Example Google api: pip install --upgrade google-api-python-client
-
-    Attribute Mapping expected format for new users:
+    Example Google Attribute Mapping expected format for new users:
 
     first_name - Basic Information - First Name
     last_name - Basic Information - Last Name

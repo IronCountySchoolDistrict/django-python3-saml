@@ -15,13 +15,13 @@ setup(
     license='BSD 3-Clause License',  # example license
     description='Django SAML auth plugin for python 3',
     long_description=README,
-    url='https://www.example.com/',
+    url='https://github.com/IronCountySchoolDistrict/django-python3-saml',
     author='Issac Gable',
     author_email='issac.gable@ironmail.org',
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
-        'Framework :: Django :: X.Y',  # replace "X.Y" as appropriate
+        'Framework :: Django :: 1.11.7',  # replace "X.Y" as appropriate
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',  # example license
         'Operating System :: OS Independent',
@@ -32,6 +32,7 @@ setup(
         'Programming Language :: Python :: 3.5',
         'Topic :: Internet :: WWW/HTTP',
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
+        'Development Status :: 4 - Beta',
     ],
     install_requires=[
         'python3-saml',
